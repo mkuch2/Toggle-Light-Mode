@@ -1,0 +1,25 @@
+:root.light{
+  --bg-color: #fff;
+  --color: #222;
+  --border-btn: 1px solid #222;
+  --bg-button: #f5f5f5;
+  --color-button: #222;
+}
+:root.dark{
+  --bg-color: #222;
+  --color: #fff;
+  --border-btn: 1px solid rgb(220, 220, 220);
+  --bg-button: #313030;
+  --color-button: #fff;
+}
+
+body{
+  background-color: var(--bg-color, red);
+  color: var(--color);
+}
+
+button{
+  background-color: var(--bg-button);
+  color: var(--color-button);
+  border: var(--border-btn);
+}
